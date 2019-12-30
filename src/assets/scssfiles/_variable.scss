@@ -1,0 +1,127 @@
+/**
+*This file contains all the common scss variable used in diffrent scss files.
+**/
+
+/*Variable Define */
+
+//$primary-color: #36639e !important;
+//$blue-color: #4A90E2 !important;
+//$dark-green-color: #108A8B !important;
+//$light-orange-color: #DA8D7B !important;
+////$parrot-green-color: #D5EDBC !important;
+//$parrot-green-color: #d6f9b3 !important;
+////$mint-green-color: #ACF5E5 !important;
+//$mint-green-color: #ACF5E5 !important;
+//$sulu-green-color: #B8E986 !important;
+//$brown-color: #C14F5F !important;
+////$yellow-color: #F5ED87 !important;
+//$yellow-color: #fff9a8 !important;
+//$sky-blue-color: #006690 !important;
+//$navi-blue-color: #1a40a3 !important;
+//$pink-color: #ffc5cd !important;
+//$white-color: #fff !important;
+
+$primary-color: #36639e !default;
+$blue-color: #4A90E2 !default;
+$dark-green-color: #108A8B !default;
+$green-color: #4b935d !default;
+$light-orange-color: #DA8D7B !default;
+//$parrot-green-color: #D5EDBC !important;
+$parrot-green-color: #d6f9b3 !default;
+//$mint-green-color: #ACF5E5 !important;
+$mint-green-color: #ACF5E5 !default;
+$sulu-green-color: #B8E986 !default;
+$brown-color: #C14F5F !default;
+//$yellow-color: #F5ED87 !important;
+$yellow-color: #fff9a8 !default;
+$sky-blue-color: #006690 !default;
+$navi-blue-color: #1a40a3 !default;
+$pink-color: #ffc5cd !default;
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+$border-color: #eae6bb;
+
+
+$red-color: #B85353 !default;
+$dark-gray-color : #b8b8b8 !default;
+$light-brown-color: #cea16e !default;
+$invalid-color: #e02020 !default;
+
+
+$colorList: (
+  'primary': $primary-color,
+  'blue': $blue-color,
+  'dark-green': $dark-green-color,
+  'green': $green-color,
+  'light-orange': $light-orange-color,
+  'parrot-green': $parrot-green-color,
+  'mint-green': $mint-green-color,
+  'sulu-green': $sulu-green-color,
+  'brown': $brown-color,
+  'yellow': $yellow-color,
+  'sky-blue': $sky-blue-color,
+  'navi-blue': $navi-blue-color,
+  'pink': $pink-color,
+  'white': $white-color,
+  'black': $black-color,
+  'red': $red-color,
+  'light-brown': $light-brown-color,
+  'dark-gray': $dark-gray-color,
+);
+
+/*Font Family*/
+$primary-font-family: 'OpenSans-Regular', sans-serif;
+
+/*Font Weight*/
+$light: 'OpenSans-Regular', sans-serif;
+$regular: 'OpenSans-Regular', sans-serif;
+$semibold: 'OpenSans-SemiBold', sans-serif;
+$bold: 'OpenSans-Bold', sans-serif;
+/*Heading*/
+
+//Heading1
+$heading1-font-size: 48px;
+$heading1-font-color: $primary-color;
+/*Height*/
+
+$height-fullscreen: 100%;
+/********************** Media Query Setting*******************************/
+
+// Small tablets and large smartphones (landscape view)
+$screen-xs-max: 667px;  //iPhone 6/7/8 (range 600 to 360)
+$screen-sm-max: 823px;  //(Pixel 2XL 823) // (812 iPhoneX)
+$screen-md-max: 1080px;
+$screen-lg-max: 1400px;
+$screen-xl-max: 1600px;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more
+
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~48px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+/***************Row left Right spacing***************/
+$custom-row-gutter: -15px;
+$custom-col-gutter: 15px;
+/****************Anchor Color************************/
+$anchor-color: $sky-blue-color !default;

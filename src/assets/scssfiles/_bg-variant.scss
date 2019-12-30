@@ -1,0 +1,16 @@
+@each $color in $colorList{
+  $key: nth($color, 1);
+  $value: nth($color, 2);
+  .bg-#{$key}{
+    //background-color: $value;
+    background-color: $value !important;
+  }
+}
+@each $color in $colorList{
+  $key: nth($color, 1);
+  $value: nth($color, 2);
+  .text-#{$key}, .color-#{$key}{
+    color: $value !important;
+  }
+}
+
