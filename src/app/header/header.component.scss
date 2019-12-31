@@ -1,0 +1,43 @@
+@import '../../assets/scssfiles/variable';
+@import '../../assets/scssfiles/mixin';
+
+.header {
+     border-bottom: solid 0.5px $primary-color;
+    display:flow-root;
+}
+
+.header-right,.header-left{
+     height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: $line-height-base;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 70px;
+  @include xl {
+    height: 75px;
+    padding: 10px;
+  }
+  @include md {
+    width: 90px;
+    height: 42px;
+    padding: 5px;
+  }
+
+  img {
+    height: 100%;
+  }
+  img + img {
+    margin-left: 20px;
+  }
+}
+
+.header-right{
+     padding: 15px 70px 15px 15px;
+     @include xl {
+       padding: 10px;
+     }
+     @include md {
+       padding: 5px;
+     }
+   }
